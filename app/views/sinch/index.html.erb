@@ -1,0 +1,31 @@
+<div>
+  <%= link_to "Sign Out", destroy_user_session_path, :method => :delete, :id => "signOut" %>
+</div>
+
+<div id="clientStart" style="display:none;">
+  Sinch client started!
+</div>
+
+<script>
+  $('document').ready(function() {
+    $("#signOut").click(function() {
+      if (sinchClient) {
+        sinchClient.terminate();
+      }
+    });
+
+    sinchClient = new SinchClient({
+      applicationKey: "your_app_key",
+      capabilities: {messaging: true},
+      startActiveConnection: true,
+      onLogMessage: function(message) {
+        console.log(message.message);
+      },
+    });
+
+    sinchClient.start({"userTicket":"<%=@ticket%>"})
+      .then(function() {
+        $("#clientStart").css("display", "inline");
+      });
+    });
+</script>
