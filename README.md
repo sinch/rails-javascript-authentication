@@ -127,7 +127,7 @@ A few notes about the code above:
 2. Use the auth ticket you generated, `@ticket`, to start the Sinch client.
 3. Reveal the UI when the Sinch client is started. This will take 1-2 seconds.
 
-To test out your app, start a local rails server, and navigate to "http://0.0.0.0:3000":
+To test out your app, start a local rails server, and navigate to [http://0.0.0.0:3000](http://0.0.0.0:3000):
 
     $ rails server
     $ open https://0.0.0.0:3000
