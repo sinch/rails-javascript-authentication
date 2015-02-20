@@ -1,11 +1,11 @@
 #Authenticating to Sinch from your Rails App with Devise
 
-This tutorial will walk you through authenticating users to the Sinch javascript SDK with a rails backend. You will use the devise gem to securely authenticate and store your users' info. Once users are authenticated with devise, you will generate a token and pass it to the Sinch javascript SDK. From there, you can follow our calling or messaging tutorials to build out the functionality of your app.
+This tutorial will walk you through authenticating users to the [Sinch JavaScript SDK](https://www.sinch.com/web-sdk/) with a Rails backend. You will use the devise gem to securely authenticate and store your users' info. Once users are authenticated with devise, you will generate a token and pass it to the Sinch JavaScript SDK. From there, you can follow our [calling or messaging tutorials](https://www.sinch.com/tutorials/) to build out the functionality of your app.
 
 ##Sinch Setup
 1. Sign up for a Sinch account at [www.sinch.com/signup](https://www.sinch.com/signup)
 2. In the developer dashboard, create a new app and take note of the app key and secret
-3. Download the Sinch javascript SDK at [www.sinch.com/downloads](https://www.sinch.com/downloads)
+3. Download the Sinch JavaScript SDK at [www.sinch.com/downloads](https://www.sinch.com/downloads)
 
 ##Project Setup
 First, create a new rails app, and move into the project directory:
@@ -17,7 +17,7 @@ And create the main controller. I'll call mine `SinchController`:
 
     $ rails generate controller sinch --no-test-framework
     
-To add the Sinch SDK to your project, add **sinch.min.js** to your javascript folder:
+To add the Sinch SDK to your project, add **sinch.min.js** to your JavaScript folder:
 
 ![image](images/sinch-min.png)
     
@@ -141,10 +141,3 @@ Congrats, you did it! You can now use the Sinch client to add calling or messagi
 - Web-web calling [sinch.com/tutorials/turn-browser-phone-js-sdk](https://www.sinch.com/tutorials/turn-browser-phone-js-sdk/)    
 - Web-phone calling [sinch.com/tutorials/using-sinch-js-sdk-make-voice-calls](https://www.sinch.com/tutorials/using-sinch-js-sdk-make-voice-calls/)    
 - Instant messaging [sinch.com/tutorials/build-instant-messaging-app-sinch-javascript](https://www.sinch.com/tutorials/build-instant-messaging-app-sinch-javascript/)
-
-
- 
-   
-
-    
- 
