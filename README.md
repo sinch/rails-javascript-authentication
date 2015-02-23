@@ -81,6 +81,17 @@ Then, in **SinchController.rb**, add the following to make the ticket accessible
     
 In the above code, you look for the ticket in the session storage. If there is no ticket, re-authenticate the user with devise. If there is a current valid devise session, users won't see a login page, but rather, `after_sign_up_path_for(user)` will automatically get called, generating a new Sinch ticket. If there is a ticket, you will get access the @ticket variable in your view. `session[:ticket]` will be set to nil so that it can be reset next time a user logs in.
 
+##Authenticate Using the sinch_auth Gem
+
+Alternatively, you can use the `sinch_auth` gem to take care of creating the token. First, add the `gem 'sinch_auth'` to your Gemfile and bundle install.
+
+The gem generates the ticket that you have created by hand in `get_auth_ticket`. You can use it like so:
+
+    sinchAuth = SinchAuth.new
+    ticket = sinchAuth.get_auth_ticket(username, expires_in, key, secret)
+    
+In the above example, pass in a string username, the number of seconds you want the token to expire in, your app key, and your app secret.
+
 ##The View
 Next, you will make 'sinch#index' the root path, and start the Sinch client in that view.
 
