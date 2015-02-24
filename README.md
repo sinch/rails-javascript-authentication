@@ -145,10 +145,10 @@ To test out your app, start a local rails server, and navigate to [http://0.0.0.
     
 Open the developer console in your browser to see real-time updates of the Sinch client:
 
-![image](images/dev-console.png)
+![developer comsole](images/dev-console.png)
 
 Congrats, you did it! You can now use the Sinch client to add calling or messaging to your web app. Check out the following tutorials to continue with your app:
 
-- Web-web calling [sinch.com/tutorials/turn-browser-phone-js-sdk](https://www.sinch.com/tutorials/turn-browser-phone-js-sdk/)    
-- Web-phone calling [sinch.com/tutorials/using-sinch-js-sdk-make-voice-calls](https://www.sinch.com/tutorials/using-sinch-js-sdk-make-voice-calls/)    
-- Instant messaging [sinch.com/tutorials/build-instant-messaging-app-sinch-javascript](https://www.sinch.com/tutorials/build-instant-messaging-app-sinch-javascript/)
+- [Web-web calling tutorial](https://www.sinch.com/tutorials/turn-browser-phone-js-sdk/)
+- [Web-phone calling tutorial](https://www.sinch.com/tutorials/using-sinch-js-sdk-make-voice-calls/)
+- [Instant messaging tutorial](https://www.sinch.com/tutorials/build-instant-messaging-app-sinch-javascript/)
