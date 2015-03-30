@@ -141,7 +141,7 @@ A few notes about the code above:
 To test out your app, start a local rails server, and navigate to [http://0.0.0.0:3000](http://0.0.0.0:3000):
 
     $ rails server
-    $ open https://0.0.0.0:3000
+    $ open http://0.0.0.0:3000
     
 Open the developer console in your browser to see real-time updates of the Sinch client:
 
