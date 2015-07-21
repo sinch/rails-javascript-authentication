@@ -19,7 +19,7 @@ Create the main controller. I'll call mine `SinchController`:
     
 To add the Sinch SDK to your project, add **sinch.min.js** to your JavaScript folder:
 
-![image](images/sinch-min.png)
+![rails devise setup](images/sinch-min.png)
     
 To set up devise, add the following to your Gemfile:
 
