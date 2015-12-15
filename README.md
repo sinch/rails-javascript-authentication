@@ -2,6 +2,8 @@
 
 This tutorial will walk you through authenticating users to the [Sinch JavaScript SDK](https://www.sinch.com/web-sdk/) with a Rails backend. You will use the devise gem to securely authenticate and store your users' info. Once users are authenticated with devise, you will generate a token and pass it to the Sinch JavaScript SDK. From there, you can follow our [calling or messaging tutorials](https://www.sinch.com/tutorials/) to build out the functionality of your app.
 
+For more [Verification Tutorials](https://www.sinch.com/tutorials/?tags%5B%5D=verification&utm_source=sinch&utm_medium=xlink&utm_campaign=verifyall)
+
 ##Sinch setup
 1. Sign up for a [Sinch account](https://www.sinch.com/signup)
 2. In the developer dashboard, create a new app and take note of the app key and secret
